@@ -3,7 +3,7 @@ Summary:	Perl MIME-Base64 module
 Summary(pl):	Modu³ Perla MIME-Base64
 Name:		perl-MIME-Base64
 Version:	2.12
-Release:	1
+Release:	2
 License:	Distributable
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
