@@ -19,14 +19,16 @@ Summary(sv):	MIME::Base64 Perlmodul
 Summary(uk):	Модуль для Perl MIME::Base64
 Summary(zh_CN):	MIME::Base64 Perl дё©И
 Name:		perl-MIME-Base64
-Version:	2.16
-Release:	3
+Version:	2.18
+Release:	1
 License:	distributable
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		noautoreq	'perl(Encode)'
 
 %define		noautoreq	'perl(Encode)'
 
