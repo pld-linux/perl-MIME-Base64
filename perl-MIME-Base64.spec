@@ -2,6 +2,7 @@
 %define		pdir	MIME
 %define		pnam	Base64
 Summary:	Base64 and QuotedPrintable encoders/decoders for Perl
+Summary(pl):	Funkcje dla Perla koduj±ce i dekoduj±ce Base64 i QuotedPrintable
 Name:		perl-MIME-Base64
 Version:	2.18
 Release:	1
@@ -40,7 +41,7 @@ jest 65-znakowy ([A-Za-z0-9+/=]) podzestaw z zestawu US-ASCII,
 reprezentuj±c ka¿dy znak drukowalny sze¶cioma bitami.
 
 Kod quoted-printable stosuje siê do reprezentacji danych, które w
-wiêkszo¶ci zawieraj± znaki drukowlne ASCII. Znaki niedrukowalne s±
+wiêkszo¶ci zawieraj± znaki drukowalne ASCII. Znaki niedrukowalne s±
 kodowane w triplety zawieraj±ce poprzedzone znakiem "=" dwie cyfry
 szesnastkowe.
 
