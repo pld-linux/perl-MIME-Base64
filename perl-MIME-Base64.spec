@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	MIME
 %define	pnam	Base64
-Summary:	Perl MIME-Base64 module
-Summary(pl):	Modu³ Perla MIME-Base64
+Summary:	Perl MIME::Base64 module
+Summary(pl):	Modu³ Perla MIME::Base64
 Name:		perl-MIME-Base64
 Version:	2.12
 Release:	5
