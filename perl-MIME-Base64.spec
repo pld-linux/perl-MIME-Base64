@@ -19,8 +19,8 @@ Summary(sv):	MIME::Base64 Perlmodul
 Summary(uk):	Модуль для Perl MIME::Base64
 Summary(zh_CN):	MIME::Base64 Perl дё©И
 Name:		perl-MIME-Base64
-Version:	2.12
-Release:	6
+Version:	2.16
+Release:	1
 License:	distributable
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
