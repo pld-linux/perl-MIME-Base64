@@ -4,12 +4,12 @@
 Summary:	Base64 and QuotedPrintable encoders/decoders for Perl
 Summary(pl):	Funkcje dla Perla koduj±ce i dekoduj±ce Base64 i QuotedPrintable
 Name:		perl-MIME-Base64
-Version:	2.21
+Version:	3.00
 Release:	1
 License:	distributable
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	67cb1a4f4006fe9bffe3eaf450656bfe
+# Source0-md5:	30531c29f31682bf12dc0c4570756976
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -71,10 +71,10 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README Changes
 %attr(755,root,root) %{_bindir}/*
-%{perl_vendorarch}/MIME/*.pm
-%dir %{perl_vendorarch}/MIME
-%dir %{perl_vendorarch}/auto/MIME
-%dir %{perl_vendorarch}/auto/MIME/Base64
-%{perl_vendorarch}/auto/MIME/Base64/*.bs
-%attr(755,root,root) %{perl_vendorarch}/auto/MIME/Base64/*.so
+%{perl_vendorarch}/%{pdir}/*.pm
+%dir %{perl_vendorarch}/%{pdir}
+%dir %{perl_vendorarch}/auto/%{pdir}
+%dir %{perl_vendorarch}/auto/%{pdir}/%{pnam}
+%{perl_vendorarch}/auto/%{pdir}/%{pnam}/*.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/%{pdir}/%{pnam}/*.so
 %{_mandir}/man3/*
