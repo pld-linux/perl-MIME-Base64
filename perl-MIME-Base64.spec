@@ -7,7 +7,7 @@ Release:	4
 Copyright:	distributable
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/MIME-Base64-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/MIME-Base64-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
@@ -16,18 +16,19 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This package contains a base64 encoder/decoder and a quoted-printable
-encoder/decoder.  These encoding methods are specified in RFC 2045 - MIME
-(Multipurpose Internet Mail Extensions).
+encoder/decoder. These encoding methods are specified in RFC 2045 -
+MIME (Multipurpose Internet Mail Extensions).
 
-The Base64 encoding is designed to represent arbitrary sequences of octets
-in a form that need not be humanly readable. A 65-character subset
-([A-Za-z0-9+/=]) of US-ASCII is used, enabling 6 bits to be represented per
-printable character.
+The Base64 encoding is designed to represent arbitrary sequences of
+octets in a form that need not be humanly readable. A 65-character
+subset ([A-Za-z0-9+/=]) of US-ASCII is used, enabling 6 bits to be
+represented per printable character.
 
-The quoted-printable encoding is intended to represent data that largely
-consists of bytes that correspond to printable characters in the ASCII
-character set.  Non-printable characters are represented by a triplet
-consisting of the character "=" followed by two hexadecimal digits.
+The quoted-printable encoding is intended to represent data that
+largely consists of bytes that correspond to printable characters in
+the ASCII character set. Non-printable characters are represented by a
+triplet consisting of the character "=" followed by two hexadecimal
+digits.
 
 %description -l pl
 Modu³ perla wspomagaj±cy algorytm MIME Base64.
