@@ -3,7 +3,7 @@ Summary:	Perl MIME-Base64 module
 Summary(pl):	Modu³ Perla MIME-Base64
 Name:		perl-MIME-Base64
 Version:	2.11
-Release:	3
+Release:	4
 Copyright:	distributable
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
