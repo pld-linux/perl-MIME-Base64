@@ -1,3 +1,4 @@
+%include	/usr/lib/rpm/macros.perl
 Summary:	Perl MIME-Base64 module
 Summary(pl):	Modu³ Perla MIME-Base64
 Name:		perl-MIME-Base64
@@ -7,6 +8,7 @@ Copyright:	distributable
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/MIME-Base64-%{version}.tar.gz
+BuildRequires:	rpm-perlprov
 BuildRequires:	perl >= 5.005_03-10
 %requires_eq	perl
 Requires:	%{perl_sitearch}
