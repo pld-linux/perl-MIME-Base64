@@ -79,6 +79,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README Changes
+%attr(755,root,root) %{_bindir}/*
 %{perl_sitearch}/MIME/*.pm
 %dir %{perl_sitearch}/MIME
 %dir %{perl_sitearch}/auto/MIME
