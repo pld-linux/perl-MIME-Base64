@@ -1,0 +1,2 @@
+- added %%{perl_sitearch}/{,auto/}MIME dirs (no other package uses them)
+- release 3
