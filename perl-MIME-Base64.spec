@@ -6,7 +6,6 @@ Summary(pl):	Modu³ Perla MIME-Base64
 Name:		perl-MIME-Base64
 Version:	2.12
 Release:	4
-
 License:	distributable
 Group:		Development/Languages/Perl
 Group(cs):	Vývojové prostøedky/Programovací jazyky/Perl
@@ -40,6 +39,18 @@ digits.
 
 %description -l pl
 Modu³ perla wspomagaj±cy algorytm MIME Base64.
+Ten pakiet zawiera (de)koder base64 i quoted-printable. Metody te
+okre¶lone s± w RFC 2045 - MIME (Multipurpose Internet Mail Extensions).
+
+Kod base64 zaprojektowano do reprezentowania okre¶lonej sekwencji
+oktetów w formie, która nie musi byæ czytelna dla cz³owieka. U¿ywany
+jest 65-znakowy ([A-Za-z0-9+/=]) podzestaw z zestawu US-ASCII,
+reprezentuj±c ka¿dy znak drukowalny sze¶cioma bitami.
+
+Kod quoted-printable stosuje siê do reprezentacji danych, które w
+wiêkszo¶ci zawieraj± znaki drukowlne ASCII. Znaki niedrukowalne s±
+kodowane w triplety zawieraj±ce poprzedzone znakiem "=" dwie cyfry
+szesnastkowe.
 
 %prep
 %setup -q -n MIME-Base64-%{version}
