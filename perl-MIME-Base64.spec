@@ -1,23 +1,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	MIME
 %define		pnam	Base64
-Summary:	Perl MIME::Base64 module
-Summary(cs):	Modul MIME::Base64 pro Perl
-Summary(da):	Perlmodul MIME::Base64
-Summary(de):	MIME::Base64 Perl Modul
-Summary(es):	Módulo de Perl MIME::Base64
-Summary(fr):	Module Perl MIME::Base64
-Summary(it):	Modulo di Perl MIME::Base64
-Summary(ja):	MIME::Base64 Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	MIME::Base64 ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul MIME::Base64
-Summary(pl):	Modu³ Perla MIME::Base64
-Summary(pt):	Módulo de Perl MIME::Base64
-Summary(pt_BR):	Módulo Perl MIME::Base64
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl MIME::Base64
-Summary(sv):	MIME::Base64 Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl MIME::Base64
-Summary(zh_CN):	MIME::Base64 Perl Ä£¿é
+Summary:	Base64 and QuotedPrintable encoders/decoders for Perl
 Name:		perl-MIME-Base64
 Version:	2.18
 Release:	1
@@ -27,8 +11,6 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		noautoreq	'perl(Encode)'
 
 %define		noautoreq	'perl(Encode)'
 
@@ -49,8 +31,7 @@ triplet consisting of the character "=" followed by two hexadecimal
 digits.
 
 %description -l pl
-Modu³ perla wspomagaj±cy algorytm MIME Base64.
-Ten pakiet zawiera (de)koder base64 i quoted-printable. Metody te
+Ten pakiet zawiera (de)kodery base64 i quoted-printable. Metody te
 okre¶lone s± w RFC 2045 - MIME (Multipurpose Internet Mail Extensions).
 
 Kod base64 zaprojektowano do reprezentowania okre¶lonej sekwencji
