@@ -5,7 +5,7 @@ Summary:	Base64 and QuotedPrintable encoders/decoders for Perl
 Summary(pl):	Funkcje dla Perla koduj±ce i dekoduj±ce Base64 i QuotedPrintable
 Name:		perl-MIME-Base64
 Version:	2.18
-Release:	1
+Release:	3
 License:	distributable
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -33,7 +33,8 @@ digits.
 
 %description -l pl
 Ten pakiet zawiera (de)kodery base64 i quoted-printable. Metody te
-okre¶lone s± w RFC 2045 - MIME (Multipurpose Internet Mail Extensions).
+okre¶lone s± w RFC 2045 - MIME (Multipurpose Internet Mail
+Extensions).
 
 Kod base64 zaprojektowano do reprezentowania okre¶lonej sekwencji
 oktetów w formie, która nie musi byæ czytelna dla cz³owieka. U¿ywany
@@ -50,7 +51,7 @@ szesnastkowe.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
