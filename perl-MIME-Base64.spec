@@ -2,11 +2,12 @@ Summary:	Perl MIME-Base64 module
 Summary(pl):	Modu³ Perla MIME-Base64
 Name:		perl-MIME-Base64
 Version:	2.11
-Release:	0.1
+Release:	1
 Copyright:	distributable
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/MIME-Base64-%{version}.tar.gz
+BuildRequires:	perl >= 5.005_61
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 BuildRoot:	/tmp/%{name}-%{version}-root
@@ -21,25 +22,23 @@ Modu³ perla wspomagaj±cy algorytm MIME Base64.
 %setup -q -n MIME-Base64-%{version}
 
 %build
-CFLAGS="$RPM_OPT_FLAGS" perl Makefile.PL
-make
+perl Makefile.PL
+make OPTIMIZE="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/%{perl_sitearch} \
-	$RPM_BUILD_ROOT%{_mandir}/man3 \
-	$RPM_BUILD_ROOT/%{perl_archlib}
+install -d $RPM_BUILD_ROOT/%{perl_archlib}
 
-make \
-	PREFIX=$RPM_BUILD_ROOT%{_prefix} \
-	INSTALLMAN3DIR=$RPM_BUILD_ROOT%{_mandir}/man3 \
-	install
+make install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/MIME/Base64/
   sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
   mv .packlist.new .packlist
 )
+
+strip --strip-unneeded $RPM_BUILD_ROOT%{perl_sitearch}/auto/*/*/*.so
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/*
 
