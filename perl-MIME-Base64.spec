@@ -1,11 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	MIME
 %define	pnam	Base64
-%include	/usr/lib/rpm/macros.perl
 Summary:	Perl MIME-Base64 module
 Summary(pl):	Modu³ Perla MIME-Base64
 Name:		perl-MIME-Base64
 Version:	2.12
-Release:	4
+Release:	5
 License:	distributable
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -45,7 +45,7 @@ kodowane w triplety zawieraj±ce poprzedzone znakiem "=" dwie cyfry
 szesnastkowe.
 
 %prep
-%setup -q -n MIME-Base64-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
