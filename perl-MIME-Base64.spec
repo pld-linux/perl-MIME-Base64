@@ -2,7 +2,7 @@
 %define		pdir	MIME
 %define		pnam	Base64
 Summary:	Base64 and QuotedPrintable encoders/decoders for Perl
-Summary(pl):	Funkcje dla Perla koduj±ce i dekoduj±ce Base64 i QuotedPrintable
+Summary(pl.UTF-8):   Funkcje dla Perla kodujÄ…ce i dekodujÄ…ce Base64 i QuotedPrintable
 Name:		perl-MIME-Base64
 Version:	3.07
 Release:	1
@@ -33,19 +33,19 @@ the ASCII character set. Non-printable characters are represented by a
 triplet consisting of the character "=" followed by two hexadecimal
 digits.
 
-%description -l pl
+%description -l pl.UTF-8
 Ten pakiet zawiera (de)kodery base64 i quoted-printable. Metody te
-okre¶lone s± w RFC 2045 - MIME (Multipurpose Internet Mail
+okreÅ›lone sÄ… w RFC 2045 - MIME (Multipurpose Internet Mail
 Extensions).
 
-Kod base64 zaprojektowano do reprezentowania okre¶lonej sekwencji
-oktetów w formie, która nie musi byæ czytelna dla cz³owieka. U¿ywany
+Kod base64 zaprojektowano do reprezentowania okreÅ›lonej sekwencji
+oktetÃ³w w formie, ktÃ³ra nie musi byÄ‡ czytelna dla czÅ‚owieka. UÅ¼ywany
 jest 65-znakowy ([A-Za-z0-9+/=]) podzestaw z zestawu US-ASCII,
-reprezentuj±c ka¿dy znak drukowalny sze¶cioma bitami.
+reprezentujÄ…c kaÅ¼dy znak drukowalny szeÅ›cioma bitami.
 
-Kod quoted-printable stosuje siê do reprezentacji danych, które w
-wiêkszo¶ci zawieraj± znaki drukowalne ASCII. Znaki niedrukowalne s±
-kodowane w triplety zawieraj±ce poprzedzone znakiem "=" dwie cyfry
+Kod quoted-printable stosuje siÄ™ do reprezentacji danych, ktÃ³re w
+wiÄ™kszoÅ›ci zawierajÄ… znaki drukowalne ASCII. Znaki niedrukowalne sÄ…
+kodowane w triplety zawierajÄ…ce poprzedzone znakiem "=" dwie cyfry
 szesnastkowe.
 
 %prep
