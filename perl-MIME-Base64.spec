@@ -2,7 +2,7 @@
 %define		pdir	MIME
 %define		pnam	Base64
 Summary:	Base64 and QuotedPrintable encoders/decoders for Perl
-Summary(pl.UTF-8):   Funkcje dla Perla kodujące i dekodujące Base64 i QuotedPrintable
+Summary(pl.UTF-8):	Funkcje dla Perla kodujące i dekodujące Base64 i QuotedPrintable
 Name:		perl-MIME-Base64
 Version:	3.07
 Release:	1
