@@ -5,7 +5,7 @@ Summary:	Base64 and QuotedPrintable encoders/decoders for Perl
 Summary(pl.UTF-8):	Funkcje dla Perla kodujące i dekodujące Base64 i QuotedPrintable
 Name:		perl-MIME-Base64
 Version:	3.07
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
