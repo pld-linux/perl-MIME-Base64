@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests		# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	MIME
 %define		pnam	Base64
@@ -9,8 +13,9 @@ Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/MIME/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	f466b62afc4fec7f262b0910913293b3
+URL:		http://search.cpan.org/dist/MIME-Base64/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -57,7 +62,8 @@ szesnastkowe.
 %{__make} \
 	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
-%{__make} test
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -72,10 +78,10 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README Changes
-%{perl_vendorarch}/%{pdir}/*.pm
-%dir %{perl_vendorarch}/%{pdir}
-%dir %{perl_vendorarch}/auto/%{pdir}
-%dir %{perl_vendorarch}/auto/%{pdir}/%{pnam}
-%{perl_vendorarch}/auto/%{pdir}/%{pnam}/*.bs
-%attr(755,root,root) %{perl_vendorarch}/auto/%{pdir}/%{pnam}/*.so
+%{perl_vendorarch}/MIME/*.pm
+%dir %{perl_vendorarch}/MIME
+%dir %{perl_vendorarch}/auto/MIME
+%dir %{perl_vendorarch}/auto/MIME/Base64
+%{perl_vendorarch}/auto/MIME/Base64/*.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/MIME/Base64/*.so
 %{_mandir}/man3/*
