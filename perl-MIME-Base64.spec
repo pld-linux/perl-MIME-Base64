@@ -8,13 +8,13 @@
 Summary:	Base64 and QuotedPrintable encoders/decoders for Perl
 Summary(pl.UTF-8):	Funkcje dla Perla kodujące i dekodujące Base64 i QuotedPrintable
 Name:		perl-MIME-Base64
-Version:	3.08
+Version:	3.09
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/MIME/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	b898218bb588360b34d13c162299a17e
+Source0:	http://www.cpan.org/modules/by-module/MIME/GAAS/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	5056bf56fb41c0ce6edd2c73de2574a5
 URL:		http://search.cpan.org/dist/MIME-Base64/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
