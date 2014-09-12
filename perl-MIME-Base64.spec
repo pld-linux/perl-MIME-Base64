@@ -82,7 +82,6 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/MIME
 %dir %{perl_vendorarch}/auto/MIME
 %dir %{perl_vendorarch}/auto/MIME/Base64
-%{perl_vendorarch}/auto/MIME/Base64/Base64.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/MIME/Base64/Base64.so
 %{_mandir}/man3/MIME::Base64.3pm*
 %{_mandir}/man3/MIME::QuotedPrint.3pm*
